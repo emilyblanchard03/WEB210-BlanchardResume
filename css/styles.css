@@ -1,0 +1,145 @@
+/*
+COLOR PALETTE
+BLUE GRAY #D9E4EC
+MISTY BLUE #B7CFDC
+BLUE GROTTO #6AABD2
+MISTY BLUE #385E72
+DARK GRAY #746C70
+*/
+
+/* GLOBAL STYLES
+-------------------------------------*/
+/*
+ https://www.paulirish.com/2012/box-sizing-border-box-ftw/
+*/
+html {
+   box-sizing: border-box;
+ }
+ *, *:before, *:after {
+   box-sizing: inherit;
+ }
+ html, body{
+   height:100%;
+ }
+body {
+   background-color:#D9E4EC ;
+   margin: 0;
+}
+/* links
+-------------------------------------*/
+a {
+   color:#385E72; 
+}
+a:hover {
+   color:#6AABD2;
+   text-decoration: none;
+}
+footer a{
+   color:#D9E4EC;
+}
+footer a:hover {
+   color:#6AABD2;
+}
+.btn{
+   background: #746C70;
+   color:#D9E4EC;
+}
+.content-wrapper{
+   margin:0 auto;
+   max-width:900px;
+   padding:30px;
+}
+/*HOME
+--------------------------------------*/
+.home{
+   background:url(../images/bg-home-office-bookshelf.jpg) no-repeat;
+   background-size: cover;
+   display:flex;
+   flex-direction:column;
+}
+.home .content-wrapper{
+   flex: 1 0 auto;
+}
+.content-bg{
+   background-color: rgb(255 255 255 / 0.9);
+   padding: 30px;
+}
+
+
+
+/*RESUME
+--------------------------------------*/
+.resume header::before{
+   background:url(../images/bg-home-office-bookshelf.jpg) center;
+   background-size:cover;
+   content:"";
+   display: block;
+   height: 375px;
+}
+.resume-section{
+   margin-bottom:50px; 
+}
+.resume-section h2{
+   border-bottom: 2px dashed #6AABD2;
+}
+.download-link{
+   position:fixed;
+   top: 5px;
+   left:5px;
+}
+
+h1{
+   font-family:New Century Schoolbook, TeX Gyre Schola, serif;
+}
+h2{
+   font-family:American Typewriter, serif;
+}
+/*Profile
+--------------------------------------*/.project-item{
+   display:flow-root;
+   margin:30px 0;
+}
+
+.project-item img {
+   width:300px;
+   float:left;
+   margin-right:20px;
+}
+/*Projects
+--------------------------------------*/
+
+/*Work Experience
+--------------------------------------*/
+.work-item{
+   display:grid;
+   grid-template-columns: 1fr 2fr;column-gap:25px;
+}
+
+/*Education
+--------------------------------------*/
+
+
+
+/*FOOTER
+--------------------------------------*/
+footer {
+   background-color:#385E72;
+   color: #D9E4EC;
+   display:flex;
+   justify-content: space-between;
+   padding: 0 20px;
+}
+.socials {
+   list-style-type: none;
+   padding: 0;
+}
+.socials li{
+   display: inline-block;
+   margin-left: 10px;
+}
+.socials img{
+   width: 32px;
+}
+.socials img:hover{
+   opacity: 50%;
+}
